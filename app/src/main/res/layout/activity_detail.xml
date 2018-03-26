@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eu.epfc.swexplorer.DetailActivity">
+
+    <TextView
+        android:id="@+id/planetNameDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Planet"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <ImageView
+        android:id="@+id/planetImageDetail"
+        android:layout_width="170dp"
+        android:layout_height="158dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planetNameDetail"
+        app:layout_constraintVertical_bias="0.13"
+        app:srcCompat="@drawable/kamino" />
+
+    <TextView
+        android:id="@+id/planetRotationDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Rotation period"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planetImageDetail" />
+
+    <TextView
+        android:id="@+id/planetOrbitalDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Orbital Period"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/planetRotationDetail"
+        app:layout_constraintTop_toBottomOf="@+id/planetRotationDetail" />
+
+    <TextView
+        android:id="@+id/planetDiameterDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Diameter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/planetOrbitalDetail"
+        app:layout_constraintTop_toBottomOf="@+id/planetOrbitalDetail" />
+
+    <TextView
+        android:id="@+id/planetClimateDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Climate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/planetDiameterDetail"
+        app:layout_constraintTop_toBottomOf="@+id/planetDiameterDetail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/planetRotationValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toEndOf="@+id/planetRotationDetail"
+        app:layout_constraintTop_toBottomOf="@+id/planetImageDetail" />
+
+    <TextView
+        android:id="@+id/planetOrbitalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="244"
+        app:layout_constraintEnd_toEndOf="@+id/planetRotationValue"
+        app:layout_constraintTop_toBottomOf="@+id/planetRotationValue" />
+
+    <TextView
+        android:id="@+id/planetDiameterValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="1256665"
+        app:layout_constraintEnd_toEndOf="@+id/planetOrbitalValue"
+        app:layout_constraintTop_toBottomOf="@+id/planetOrbitalValue" />
+
+    <TextView
+        android:id="@+id/planetClimateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Swammmmp"
+        app:layout_constraintBottom_toBottomOf="@+id/planetClimateDetail"
+        app:layout_constraintEnd_toEndOf="@+id/planetDiameterValue"
+        app:layout_constraintTop_toBottomOf="@+id/planetDiameterValue" />
+
+
+</android.support.constraint.ConstraintLayout>
